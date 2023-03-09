@@ -7,3 +7,4 @@ include_directories(.)
 
 add_executable(PRJ_1
         src/main.cpp)
+target_link_libraries(PRJ_1 sfml-audio sfml-graphics sfml-window sfml-system)

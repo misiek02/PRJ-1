@@ -240,4 +240,5 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: \
  /usr/include/SFML/Graphics/Text.hpp \
  /usr/include/SFML/Graphics/VertexBuffer.hpp \
  /home/szylux/Desktop/PRJ-1/include/stack.h /usr/include/c++/11/iostream \
- /usr/include/c++/11/istream /usr/include/c++/11/bits/istream.tcc
+ /usr/include/c++/11/istream /usr/include/c++/11/bits/istream.tcc \
+ /home/szylux/Desktop/PRJ-1/include/queueTab.h

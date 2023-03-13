@@ -301,8 +301,11 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: ../src/main.cpp \
   ../include/stack.h \
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/istream \
-  /usr/include/c++/11/bits/istream.tcc
+  /usr/include/c++/11/bits/istream.tcc \
+  ../include/queueTab.h
 
+
+../include/queueTab.h:
 
 /usr/include/c++/11/bits/istream.tcc:
 

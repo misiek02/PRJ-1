@@ -298,6 +298,7 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/SFML/Graphics/Sprite.hpp \
   /usr/include/SFML/Graphics/Text.hpp \
   /usr/include/SFML/Graphics/VertexBuffer.hpp \
+  ../include/stack.h \
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc
@@ -716,6 +717,8 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/c++/11/bits/functional_hash.h:
 
 /usr/include/stdlib.h:
+
+../include/stack.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 

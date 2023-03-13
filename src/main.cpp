@@ -1,25 +1,15 @@
 #include <SFML/Graphics.hpp>
+#include "stack.h"
 #include <iostream>
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
-    sf::CircleShape shape(100.f);
-    shape.setFillColor(sf::Color::Green);
-
-    while (window.isOpen())
-    {
-        sf::Event event;
-        while (window.pollEvent(event))
-        {
-            if (event.type == sf::Event::Closed)
-                window.close();
-        }
-
-        window.clear();
-        window.draw(shape);
-        window.display();
-    }
+    Stack<float> y;
+    y.push(2.011);
+    y.push(4.99);
+    y.empty();
+    float g = y.top();
+    std::cout<<g<<std::endl;
 
     return 0;
-}
+} 

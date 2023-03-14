@@ -115,8 +115,8 @@ CMAKE_INSTALL_DATAROOTDIR:PATH=share
 //Documentation root (DATAROOTDIR/doc/PROJECT_NAME)
 CMAKE_INSTALL_DOCDIR:PATH=
 
-//C header files (include)
-CMAKE_INSTALL_INCLUDEDIR:PATH=include
+//C header files (inc)
+CMAKE_INSTALL_INCLUDEDIR:PATH=inc
 
 //Info documentation (DATAROOTDIR/info)
 CMAKE_INSTALL_INFODIR:PATH=
@@ -136,8 +136,8 @@ CMAKE_INSTALL_LOCALSTATEDIR:PATH=var
 //Man documentation (DATAROOTDIR/man)
 CMAKE_INSTALL_MANDIR:PATH=
 
-//C header files for non-gcc (/usr/include)
-CMAKE_INSTALL_OLDINCLUDEDIR:PATH=/usr/include
+//C header files for non-gcc (/usr/inc)
+CMAKE_INSTALL_OLDINCLUDEDIR:PATH=/usr/inc
 
 //Install path prefix, prepended onto install directories.
 CMAKE_INSTALL_PREFIX:PATH=/usr/local
@@ -432,7 +432,7 @@ CMAKE_GENERATOR_PLATFORM:INTERNAL=
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
 //Test CMAKE_HAVE_LIBC_PTHREAD
 CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=1
-//Have include pthread.h
+//Have inc pthread.h
 CMAKE_HAVE_PTHREAD_H:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project

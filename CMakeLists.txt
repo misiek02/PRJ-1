@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD 17)
 
 
 add_executable(PRJ_1
-        src/main.cpp)
+        src/main.cpp inc/list.h inc/stack.h inc/queueTab.h )
 target_link_libraries(PRJ_1 sfml-audio sfml-graphics sfml-window sfml-system)
-target_include_directories(PRJ_1 PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
+target_include_directories(PRJ_1 PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/inc)
 

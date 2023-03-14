@@ -243,4 +243,5 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: \
  /usr/include/c++/11/istream /usr/include/c++/11/bits/istream.tcc \
  /home/szylux/Desktop/PRJ-1/inc/stackTab.h \
  /home/szylux/Desktop/PRJ-1/inc/queueTab.h \
- /home/szylux/Desktop/PRJ-1/inc/list.h
+ /home/szylux/Desktop/PRJ-1/inc/list.h \
+ /home/szylux/Desktop/PRJ-1/inc/Array.h

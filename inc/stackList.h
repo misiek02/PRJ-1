@@ -1,8 +1,6 @@
 #pragma once
 #include <iostream>
 
-// https://www.youtube.com/watch?v=Cy7cuQUNt6Y
-// https://www.geeksforgeeks.org/implement-a-stack-using-singly-linked-list/
 
 template <typename T>
 struct Node {

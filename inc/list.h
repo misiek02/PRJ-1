@@ -10,20 +10,21 @@ using namespace std;
 
 // Node class to represent
 // a node of the linked list.
+template <typename T>
 class Cell {
 public:
-    int data;
+    T data;
     Cell* next;
 
     // Default constructor
     Cell()
     {
-        data = 0;
+        data = T();
         next = NULL;
     }
 
     // Parameterised Constructor
-    Cell(int data)
+    Cell(T data)
     {
         this->data = data;
         this->next = NULL;
@@ -32,8 +33,9 @@ public:
 
 // Linked list class to
 // implement a linked list.
+template <typename T>
 class Linkedlist {
-    Cell* head;
+    Cell<T> *head;
 
 public:
     // Default constructor
@@ -42,7 +44,7 @@ public:
     // Function to insert a
     // node at the end of the
     // linked list.
-    void instertCell(int);
+    void instertCell(T);
 
     // Function to print the
     // linked list.
@@ -50,15 +52,16 @@ public:
 
     // Function to delete the
     // node at given position
-    void deleteCell(int);
+    void deleteCell(T);
 };
 
 // Function to delete the
 // node at given position
-void Linkedlist::deleteCell(int CellOffset)
+template <typename T>
+void Linkedlist<T>::deleteCell(T CellOffset)
 {
-    Cell *temp1 = head, *temp2 = NULL;
-    int ListLen = 0;
+    Cell<T> *temp1 = head, *temp2 = NULL;
+    T ListLen = 0;
 
     if (head == NULL) {
         cout << "List empty." << endl;
@@ -112,10 +115,11 @@ void Linkedlist::deleteCell(int CellOffset)
 }
 
 // Function to insert a new node.
-void Linkedlist::instertCell(int data)
+template <typename T>
+void Linkedlist<T>::instertCell(T data)
 {
     // Create the new Node.
-    Cell* newCell = new Cell(data);
+    Cell<T>* newCell = new Cell<T>(data);
 
     // Assign to head
     if (head == NULL) {
@@ -124,7 +128,7 @@ void Linkedlist::instertCell(int data)
     }
 
     // Traverse till end of list
-    Cell* temp = head;
+    Cell<T>* temp = head;
     while (temp->next != NULL) {
 
         // Update temp
@@ -137,9 +141,10 @@ void Linkedlist::instertCell(int data)
 
 // Function to print the
 // nodes of the linked list.
-void Linkedlist::printList()
+template <typename T>
+void Linkedlist<T>::printList()
 {
-    Cell* temp = head;
+    Cell<T>* temp = head;
 
     // Check for empty list.
     if (head == NULL) {

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/szylux/Desktop/PRJ-1/include
+CXX_INCLUDES = -I/home/szylux/Desktop/PRJ-1/inc
 
 CXX_FLAGS = 
 

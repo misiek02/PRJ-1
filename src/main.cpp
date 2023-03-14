@@ -14,7 +14,7 @@ int main()
     float g = y.size();
     std::cout<<g<<std::endl;
 
-    Linkedlist list;
+    Linkedlist<int> list;
 
 /*
     //Stack

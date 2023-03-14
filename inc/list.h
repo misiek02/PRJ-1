@@ -1,6 +1,7 @@
 //
 // Created by ADMIN on 14.03.2023.
 //
+//https://www.geeksforgeeks.org/program-to-implement-singly-linked-list-in-c-using-class/
 
 #ifndef PRJ_1_LIST_H
 #define PRJ_1_LIST_H

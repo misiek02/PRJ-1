@@ -3,6 +3,7 @@
 #include "stackTab.h"
 #include "queueTab.h"
 #include "list.h"
+#include "Array.h"
 #include <iostream>
 
 int main()
@@ -17,16 +18,16 @@ int main()
 
     Linkedlist<int> list;
 
-/*
+
     //Stack
-    Stack<int> s;
+    StackTab<int> s;
 
     // Push the elements of stack
     s.push(11);
     s.push(22);
     s.push(33);
     s.push(44);
-
+/*
     // Display stack elements
     s.display();
 
@@ -64,9 +65,31 @@ int main()
     list.printList();
     cout << endl;
 
-//Stack
-    StackList<int> s;
-    s.push(2);
-    s.top();
+    //Stack
+    StackList<int> ss;
+    ss.push(2);
+    ss.top();
+
+
+    Array<int> arr(5);
+
+    arr.add(1);
+    arr.add(2);
+    arr.add(3);
+
+
+    //Tab
+
+    std::cout << arr[0] << std::endl; // prints "1"
+    std::cout << arr[1] << std::endl; // prints "2"
+    std::cout << arr[2] << std::endl; // prints "3"
+
+    arr.remove(1);
+
+    std::cout << arr[0] << std::endl; // prints "1"
+    std::cout << arr[1] << std::endl; // prints "3"
+
+    std::cout << arr.find(1) << std::endl; // prints "0"
+    std::cout << arr.find(2) << std::endl; // prints "-1"
     return 0;
 } 

@@ -21,7 +21,6 @@ class StackList{
         T pop(); // removes an element from the top
         bool empty(); // returns 0 if stack is empty
         const T& top(); // returns value from the top (doesn't pop it)
-        
 };
 
 // PUSH - pushing v - value on the stack

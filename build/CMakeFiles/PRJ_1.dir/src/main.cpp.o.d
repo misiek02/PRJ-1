@@ -239,7 +239,8 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: \
  /usr/include/SFML/Graphics/Sprite.hpp \
  /usr/include/SFML/Graphics/Text.hpp \
  /usr/include/SFML/Graphics/VertexBuffer.hpp \
- /home/szylux/Desktop/PRJ-1/inc/stack.h /usr/include/c++/11/iostream \
+ /home/szylux/Desktop/PRJ-1/inc/stackList.h /usr/include/c++/11/iostream \
  /usr/include/c++/11/istream /usr/include/c++/11/bits/istream.tcc \
+ /home/szylux/Desktop/PRJ-1/inc/stackTab.h \
  /home/szylux/Desktop/PRJ-1/inc/queueTab.h \
  /home/szylux/Desktop/PRJ-1/inc/list.h

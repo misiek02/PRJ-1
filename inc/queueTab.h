@@ -8,8 +8,8 @@ class QueueTab{
     int q_front;
 
     public:
-        QueueTab() { capacity= 10; tab = new T[capacity]; q_front = -1;} // CONSTRUCTOR without - basic values with no parameters
-        QueueTab(std::size_t initialCapacity); // CONSTRUCTOR with parameters
+        QueueTab() { capacity= 10; tab = new T[capacity]; q_front = -1;} // Default constructor - capacity of 10
+        QueueTab(std::size_t initialCapacity); // Parameterised Constructor
         void enqueue(const T& value); // adding an element to the queue
         T dequeue(); // delete an element from queue
         std::size_t size();  //  shows number of element in the queue
@@ -17,7 +17,7 @@ class QueueTab{
 };
 
 
-// CONSTRUCTOR with parameters
+// Parameterised Constructor
 template <typename T>
 QueueTab<T>::QueueTab(std::size_t initialCapacity)
 {

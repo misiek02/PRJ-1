@@ -1,5 +1,6 @@
 #include <SFML/Graphics.hpp>
-#include "stack.h"
+#include "stackList.h"
+#include "stackTab.h"
 #include "queueTab.h"
 #include "list.h"
 #include <iostream>
@@ -63,5 +64,9 @@ int main()
     list.printList();
     cout << endl;
 
+//Stack
+    StackList<int> s;
+    s.push(2);
+    s.top();
     return 0;
 } 

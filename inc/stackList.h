@@ -13,11 +13,11 @@ struct Node {
 };
 
 template <typename T>
-class Stack{
+class StackList{
         Node<T> *s_top; // s_top name beacause of function top !!!
     public:
-        Stack() {s_top=NULL;} 
-        void push(const T& v); // pushes an element on the top 
+        StackList() {s_top=NULL;} // Default constructor
+        void push(const T& v); // pushes an element at the top 
         T pop(); // removes an element from the top
         bool empty(); // returns 0 if stack is empty
         const T& top(); // returns value from the top (doesn't pop it)
@@ -26,7 +26,7 @@ class Stack{
 
 // PUSH - pushing v - value on the stack
 template <typename T>
-void Stack<T>::push(const T& v) {
+void StackList<T>::push(const T& v) {
     // next = top
     // value = v
     s_top = new Node(v,s_top);
@@ -34,7 +34,7 @@ void Stack<T>::push(const T& v) {
 
 //  POP - removes and returnes an element from the top
 template <typename T>
-T Stack<T>::pop() {
+T StackList<T>::pop() {
     
 
     if(s_top == NULL){
@@ -52,7 +52,7 @@ return T();
 
 //  EMPTY - returns 0 if stack is empty
 template <typename T>
-bool Stack<T>::empty() {
+bool StackList<T>::empty() {
     if(s_top == NULL){
             std::cout<<"Stack is empty\n";
             return s_top == NULL;
@@ -68,7 +68,7 @@ bool Stack<T>::empty() {
 
 // TOP - returns value from the top (doesn't pop it)
 template <typename T>
-const T& Stack<T>::top() {
+const T& StackList<T>::top() {
 
      if(s_top == NULL){
         std::cout<<"Stack underflow\n";
@@ -76,6 +76,7 @@ const T& Stack<T>::top() {
     }
 
     T static t=s_top->value;
+    std::cout<<"Top element: "<< t <<std::endl;
     return t;
 
     }

@@ -20,7 +20,7 @@ class StackTab{
 };
 
 template <typename T>
-void StackTab<T>::StackTab(const T& value){
+void StackTab<T>::push(const T& value){
     if(s_top == capacity - 1){
         std::cout<<"Overflow\n";
         exit(1);

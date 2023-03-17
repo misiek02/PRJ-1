@@ -73,15 +73,15 @@ CMakeFiles/tests.dir/src/tests.cpp.o: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/src/tests.cpp.o: ../src/tests.cpp
 CMakeFiles/tests.dir/src/tests.cpp.o: CMakeFiles/tests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/szylux/Desktop/PRJ-1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tests.dir/src/tests.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests.dir/src/tests.cpp.o -MF CMakeFiles/tests.dir/src/tests.cpp.o.d -o CMakeFiles/tests.dir/src/tests.cpp.o -c /home/szylux/Desktop/PRJ-1/src/tests.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests.dir/src/tests.cpp.o -MF CMakeFiles/tests.dir/src/tests.cpp.o.d -o CMakeFiles/tests.dir/src/tests.cpp.o -c /home/szylux/Desktop/PRJ-1/src/tests.cpp
 
 CMakeFiles/tests.dir/src/tests.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/src/tests.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/szylux/Desktop/PRJ-1/src/tests.cpp > CMakeFiles/tests.dir/src/tests.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/szylux/Desktop/PRJ-1/src/tests.cpp > CMakeFiles/tests.dir/src/tests.cpp.i
 
 CMakeFiles/tests.dir/src/tests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/src/tests.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/szylux/Desktop/PRJ-1/src/tests.cpp -o CMakeFiles/tests.dir/src/tests.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/szylux/Desktop/PRJ-1/src/tests.cpp -o CMakeFiles/tests.dir/src/tests.cpp.s
 
 # Object files for target tests
 tests_OBJECTS = \

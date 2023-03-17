@@ -50,7 +50,7 @@ int main()
     list.instertCell(1);
     list.instertCell(2);
     list.instertCell(3);
-    list.instertCell(4);
+    list.instertCell(6);
 
     cout << "Elements of the list are: ";
 

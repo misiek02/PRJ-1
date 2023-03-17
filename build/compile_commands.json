@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/szylux/Desktop/PRJ-1/build",
+  "command": "/usr/bin/g++  -I/home/szylux/Desktop/PRJ-1/inc -g -o CMakeFiles/PRJ_1.dir/src/main.cpp.o -c /home/szylux/Desktop/PRJ-1/src/main.cpp",
+  "file": "/home/szylux/Desktop/PRJ-1/src/main.cpp"
+},
+{
+  "directory": "/home/szylux/Desktop/PRJ-1/build",
+  "command": "/usr/bin/g++  -I/home/szylux/Desktop/PRJ-1/inc -g -o CMakeFiles/tests.dir/src/tests.cpp.o -c /home/szylux/Desktop/PRJ-1/src/tests.cpp",
+  "file": "/home/szylux/Desktop/PRJ-1/src/tests.cpp"
+}
+]

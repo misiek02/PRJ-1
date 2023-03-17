@@ -14,3 +14,4 @@ add_executable(tests
 src/tests.cpp inc/list.h inc/stackTab.h inc/queueTab.h inc/Array.h inc/stackList.h)
 target_include_directories(tests PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/inc)
 
+include(CPack)

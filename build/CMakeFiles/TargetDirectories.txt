@@ -1,4 +1,6 @@
 /home/szylux/Desktop/PRJ-1/build/CMakeFiles/PRJ_1.dir
 /home/szylux/Desktop/PRJ-1/build/CMakeFiles/tests.dir
+/home/szylux/Desktop/PRJ-1/build/CMakeFiles/package.dir
+/home/szylux/Desktop/PRJ-1/build/CMakeFiles/package_source.dir
 /home/szylux/Desktop/PRJ-1/build/CMakeFiles/edit_cache.dir
 /home/szylux/Desktop/PRJ-1/build/CMakeFiles/rebuild_cache.dir

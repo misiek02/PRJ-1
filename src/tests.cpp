@@ -12,104 +12,53 @@
 
 TEST_CASE( "Stack based on list tests" ) {
     StackList<int> y;
+    REQUIRE(y.empty() == 1);
     y.push(2);
+    REQUIRE(y.top() == 2 );
     y.push(4);
+    REQUIRE(y.top() == 4 );
     y.push(6);
+    REQUIRE(y.top() == 6 );
     y.push(7);
+    REQUIRE(y.top() == 7 );
     y.pop();
+    REQUIRE(y.top() == 6 );
     y.pop();
     REQUIRE(y.top() == 4 );
+    REQUIRE(y.empty() == 0);
+    REQUIRE(y.pop() == 4);
+    REQUIRE(y.pop() == 2);
     REQUIRE(y.empty() == 1);
+    
+  
   
 }
 
 
-TEST_CASE( "Stack based on list tests2" ) {
-    StackList<int> y;
-    y.push(2);
-    y.push(4);
-    y.push(6);
-    y.push(7);
-    y.pop();
-    y.pop();
-    REQUIRE(y.top() == 4 );
-    REQUIRE(y.empty() == 1);
-  
-}
+TEST_CASE( "Stack based on list tests II" ) {
+    StackList<int> stack;
 
-TEST_CASE( "Stack based on list test2s" ) {
-    StackList<int> y;
-    y.push(2);
-    y.push(4);
-    y.push(6);
-    y.push(7);
-    y.pop();
-    y.pop();
-    REQUIRE(y.top() == 4 );
-    REQUIRE(y.empty() == 1);
-  
-}
-TEST_CASE( "Stack ba532st tes3ts" ) {
-    StackList<int> y;
-    y.push(2);
-    y.push(4);
-    y.push(6);
-    y.push(7);
-    y.pop();
-    y.pop();
-    REQUIRE(y.top() == 4 );
-    REQUIRE(y.empty() == 1);
-  
-}
-TEST_CASE( "Stack532 on li4st tests" ) {
-    StackList<int> y;
-    y.push(2);
-    y.push(4);
-    y.push(6);
-    y.push(7);
-    y.pop();
-    y.pop();
-    REQUIRE(y.top() == 4 );
-    REQUIRE(y.empty() == 1);
-  
-}
+    stack.push(10);
+    stack.push(20);
+    stack.push(30);
+
+    REQUIRE(stack.pop() == 30);
+    REQUIRE(stack.pop() == 20);
+    REQUIRE(stack.pop() == 10);
+    REQUIRE(stack.empty() == true);
+    stack.push(10);
+    stack.push(20);
+    REQUIRE(stack.empty() == false);
+    stack.pop();
+    REQUIRE(stack.empty() == false);
+    stack.pop();
+    REQUIRE(stack.empty() == true);
+    stack.push(10);
+    stack.push(20);
+    REQUIRE(stack.top() == 20);
+    stack.pop();
+    REQUIRE(stack.top() == 10);
 
 
-TEST_CASE( "Stack b432st tests" ) {
-    StackList<int> y;
-    y.push(2);
-    y.push(4);
-    y.push(6);
-    y.push(7);
-    y.pop();
-    y.pop();
-    REQUIRE(y.top() == 4 );
-    REQUIRE(y.empty() == 1);
-  
-}
 
-TEST_CASE( "Stack ba432 tests" ) {
-    StackList<int> y;
-    y.push(2);
-    y.push(4);
-    y.push(6);
-    y.push(7);
-    y.pop();
-    y.pop();
-    REQUIRE(y.top() == 4 );
-    REQUIRE(y.empty() == 1);
-  
-}
-
-TEST_CASE( "Stack based 43ist tests" ) {
-    StackList<int> y;
-    y.push(2);
-    y.push(4);
-    y.push(6);
-    y.push(7);
-    y.pop();
-    y.pop();
-    REQUIRE(y.top() == 4 );
-    REQUIRE(y.empty() == 1);
-  
 }

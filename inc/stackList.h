@@ -41,9 +41,10 @@ T StackList<T>::pop() {
 
     Node<T> *temp  = s_top;
     s_top=s_top->next;
-    delete temp; // calling free and the destructor
+   
 
-return T();
+return temp->value;
+delete temp; // calling free and the destructor
    
 }
 
@@ -52,13 +53,13 @@ template <typename T>
 bool StackList<T>::empty() {
     if(s_top == NULL){
             std::cout<<"Stack is empty\n";
-            return s_top == NULL;
+            return 1;
             
     }
 
  
             std::cout<<"Stack ISN'T empty\n";
-            return !(s_top == NULL);
+            return 0;
             
     
  }
@@ -72,7 +73,8 @@ const T& StackList<T>::top() {
         exit(1);
     }
 
-    T static t=s_top->value;
+    T static t;
+    t=s_top->value;
     std::cout<<"Top element: "<< t <<std::endl;
     return t;
 

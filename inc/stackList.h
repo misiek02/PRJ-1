@@ -1,14 +1,7 @@
 #pragma once
 #include <iostream>
+#include "singly_linked_list.h"
 
-
-template <typename T>
-struct Node {
-    T value;
-    Node<T> *next;
-
-    Node(T value, Node *next=NULL) {this->value=value; this->next=next;}
-};
 
 template <typename T>
 class StackList{
@@ -17,7 +10,7 @@ class StackList{
         StackList() {s_top=NULL;} // Default constructor
         void push(const T& v); // pushes an element at the top 
         T pop(); // removes an element from the top
-        bool empty(); // returns 0 if stack is empty
+        bool empty(); // returns 1 if stack is empty
         const T& top(); // returns value from the top (doesn't pop it)
 };
 

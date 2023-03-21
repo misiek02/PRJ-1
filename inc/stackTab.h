@@ -14,6 +14,7 @@ class StackTab{
         StackTab(std::size_t initialCapacity) { capacity=initialCapacity; tab = new T[capacity]; s_top = -1;} 
 
         // METHODS
+        
         void push(const T& value); // pushes an element at the top 
         bool empty(); // returns 0 if stack is empty
         T pop(); // removes an element from the top
@@ -28,7 +29,7 @@ void StackTab<T>::push(const T& value){
         std::cout<<"Overflow\n";
         exit(1);
     }
-    tab[++s_top]=value;
+    tab[s_top++]=value;
 }
 
 // returns 0 if stack is empty
@@ -68,7 +69,7 @@ std::size_t StackTab<T>::size(){
        std::cout<<"Queue empty\n";
         exit(1);
     }
-    std::cout<<"Number of elements :" << ++s_top << std::endl;
+    std::cout<<"Number of elements :" << s_top++ << std::endl;
     return s_top;
 }
 

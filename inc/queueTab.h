@@ -11,7 +11,7 @@ class QueueTab{
         QueueTab() { capacity= 10; tab = new T[capacity]; q_front = -1;} // Default constructor - capacity of 10
         QueueTab(std::size_t initialCapacity); // Parameterised Constructor
         void enqueue(const T& value); // adding an element to the queue
-        T dequeue(); // delete an element from queue
+        T dequeue(); // delete an element from queue an return it
         std::size_t size();  //  shows number of element in the queue
         const T& front(); // returns first element in the queue (doesnt delete it)
 };
@@ -65,3 +65,7 @@ std::size_t QueueTab<T>::size() {
     return q_front;
 
     }
+
+//  DEQUEUE - delete an element from queue an returns it
+template <typename T>
+T QueueTab<T>::dequeue() {return T();}

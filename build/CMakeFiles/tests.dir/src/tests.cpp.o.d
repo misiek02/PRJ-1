@@ -333,6 +333,7 @@ CMakeFiles/tests.dir/src/tests.cpp.o: \
  /usr/include/SFML/Graphics/Text.hpp \
  /usr/include/SFML/Graphics/VertexBuffer.hpp \
  /home/szylux/Desktop/PRJ-1/inc/stackList.h \
+ /home/szylux/Desktop/PRJ-1/inc/singly_linked_list.h \
  /home/szylux/Desktop/PRJ-1/inc/stackTab.h \
  /home/szylux/Desktop/PRJ-1/inc/queueTab.h \
  /home/szylux/Desktop/PRJ-1/inc/list.h \

@@ -302,6 +302,7 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
+  ../inc/singly_linked_list.h \
   ../inc/stackTab.h \
   ../inc/queueTab.h \
   ../inc/list.h \
@@ -589,6 +590,8 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
 /usr/include/x86_64-linux-gnu/asm/errno.h:
+
+../inc/singly_linked_list.h:
 
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
 

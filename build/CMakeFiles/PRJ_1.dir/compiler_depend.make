@@ -306,8 +306,11 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: ../src/main.cpp \
   ../inc/stackTab.h \
   ../inc/queueTab.h \
   ../inc/list.h \
-  ../inc/Array.h
+  ../inc/Array.h \
+  ../inc/priority_queue.h
 
+
+../inc/priority_queue.h:
 
 ../inc/list.h:
 

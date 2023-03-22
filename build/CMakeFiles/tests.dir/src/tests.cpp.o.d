@@ -337,4 +337,5 @@ CMakeFiles/tests.dir/src/tests.cpp.o: \
  /home/szylux/Desktop/PRJ-1/inc/stackTab.h \
  /home/szylux/Desktop/PRJ-1/inc/queueTab.h \
  /home/szylux/Desktop/PRJ-1/inc/list.h \
- /home/szylux/Desktop/PRJ-1/inc/Array.h
+ /home/szylux/Desktop/PRJ-1/inc/Array.h \
+ /home/szylux/Desktop/PRJ-1/inc/priority_queue.h

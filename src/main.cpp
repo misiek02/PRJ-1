@@ -6,6 +6,7 @@
 #include "Array.h"
 #include <iostream>
 #include "singly_linked_list.h"
+#include "priority_queue.h"
 
 int main()
 {
@@ -94,9 +95,23 @@ int main()
 //     std::cout << arr.find(2) << std::endl; // prints "-1"
 
 SinglyLinkedList<int> list;
-  list.front() == 20;
+list.insert(999,3);
 
-  
+
+PriorityQueue<int> pque;
+int x;
+x=pque.empty();
+pque.insert(87,9);
+pque.insert(87,4);
+pque.insert(94,3);
+pque.insert(9,8);
+pque.insert(5129,1);
+pque.insert(239,1);
+pque.insert(4219,1);
+
+
+
+
 
     
      

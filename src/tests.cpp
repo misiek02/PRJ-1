@@ -8,6 +8,7 @@
 #include "Array.h"
 #include <iostream>
 #include "singly_linked_list.h"
+#include "priority_queue.h"
 
 
 

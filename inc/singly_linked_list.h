@@ -156,16 +156,22 @@ void SinglyLinkedList<T>::insert(const T& newElement, int index){
     Node<T> *OLD;
     Node<T> *temp_node = new Node<T>;
     NEW->value=newElement;
-
+    
     temp_node=head;
-    while(temp!=index){
+    if(head!=NULL){
+    while(temp!=index-1){
         temp_node=temp_node->next;
         temp++;
     }
     OLD=temp_node->next;
     temp_node->next=NEW;
     NEW->next=OLD;
-   
+    siz++;
+   }
+   else
+   addFront(newElement);
+
+  
 
     
 }

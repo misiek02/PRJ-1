@@ -1,71 +1,60 @@
 #pragma once
 
-template <typename T>
-class QueueTab{
+template <typename T> class QueueTab {
 
-    T *tab;
-    size_t capacity;
-    int q_front;
+  T *tab;
+  size_t capacity;
+  int q_front;
 
-    public:
-        QueueTab() { capacity= 10; tab = new T[capacity]; q_front = -1;} // Default constructor - capacity of 10
-        QueueTab(std::size_t initialCapacity); // Parameterised Constructor
-        void enqueue(const T& value); // adding an element to the queue
-        T dequeue(); // delete an element from queue an return it
-        std::size_t size();  //  shows number of element in the queue
-        const T& front(); // returns first element in the queue (doesnt delete it)
-};
-
-
-// Parameterised Constructor
-template <typename T>
-QueueTab<T>::QueueTab(std::size_t initialCapacity)
-{
-    capacity= initialCapacity;
+public:
+  QueueTab() {
+    capacity = 10;
     tab = new T[capacity];
     q_front = -1;
+  }                                      // Default constructor - capacity of 10
+  QueueTab(std::size_t initialCapacity); // Parameterised Constructor
+  void enqueue(const T &value);          // adding an element to the queue
+  T dequeue();        // delete an element from queue an return it
+  std::size_t size(); //  shows number of element in the queue
+  const T &front();   // returns first element in the queue (doesnt delete it)
+};
 
-
+// Parameterised Constructor
+template <typename T> QueueTab<T>::QueueTab(std::size_t initialCapacity) {
+  capacity = initialCapacity;
+  tab = new T[capacity];
+  q_front = -1;
 }
 
-
-
 //  ENQUEUE - adding an element to the queue
-template <typename T>
-void QueueTab<T>::enqueue(const T& value) {
-    if(q_front == capacity-1){
-        std::cout<<"Overflow\n";
-    }
+template <typename T> void QueueTab<T>::enqueue(const T &value) {
+  if (q_front == capacity - 1) {
+    std::cout << "Overflow\n";
+  }
 
-    tab[++q_front]=value;
-
-    
-    }
+  tab[++q_front] = value;
+}
 
 //  FRONT - returns first element in the queue (doesnt delete it)
-template <typename T>
-const T& QueueTab<T>::front() {
-   if(q_front == -1){
-       std::cout<<"Underflow\n";
-        exit(1);
-    }
+template <typename T> const T &QueueTab<T>::front() {
+  if (q_front == -1) {
+    std::cout << "Underflow\n";
+    exit(1);
+  }
 
-T static t=tab[0];
-return t;
-    }
+  T static t = tab[0];
+  return t;
+}
 
 //  SIZE - returns first element in the queue (doesnt delete it)
-template <typename T>
-std::size_t QueueTab<T>::size() {
-   if(q_front == -1){
-       std::cout<<"Queue empty\n";
-        exit(1);
-    }
-    std::cout<<"Number of elements :" << ++q_front << std::endl;
-    return q_front;
-
-    }
+template <typename T> std::size_t QueueTab<T>::size() {
+  if (q_front == -1) {
+    std::cout << "Queue empty\n";
+    exit(1);
+  }
+  std::cout << "Number of elements :" << ++q_front << std::endl;
+  return q_front;
+}
 
 //  DEQUEUE - delete an element from queue an returns it
-template <typename T>
-T QueueTab<T>::dequeue() {return T();}
+template <typename T> T QueueTab<T>::dequeue() { return T(); }

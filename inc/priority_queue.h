@@ -56,35 +56,6 @@ void PriorityQueue<T>::insert(const T &newElement, int key) {
 
   else
     addFront(newElement, key);
-  // if(key < 1)
-  //     key=1;
-
-  // PriorityNode<T> *NEW = new PriorityNode<T>;
-  // PriorityNode<T> *OLD;
-  // PriorityNode<T> *temp_node = new PriorityNode<T>;
-  // NEW->value=newElement;
-  // NEW->priority=key;
-
-  // temp_node=head;
-
-  // if(head!=NULL){
-  //     if(temp_node->priority>=key){
-  //          OLD=temp_node->next;
-  //     temp_node->next=NEW;
-  //     NEW->next=OLD;
-  //     }
-  //     else{
-  //     while(temp_node->next->priority<=key && temp_node->next!=NULL){
-  //         temp_node=temp_node->next;
-
-  //     }
-  //     OLD=temp_node->next;
-  //     temp_node->next=NEW;
-  //     NEW->next=OLD;
-  // }
-  // }
-  //     else
-  //         addFront(newElement,key);
 }
 
 template <typename T>

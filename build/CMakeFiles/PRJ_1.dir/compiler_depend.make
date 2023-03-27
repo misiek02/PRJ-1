@@ -308,7 +308,8 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/SFML/Graphics/Glsl.inl \
   /usr/include/SFML/Graphics/Sprite.hpp \
   /usr/include/SFML/Graphics/Text.hpp \
-  /usr/include/SFML/Graphics/VertexBuffer.hpp
+  /usr/include/SFML/Graphics/VertexBuffer.hpp \
+  ../inc/min_heap.h
 
 
 /usr/include/SFML/Graphics/VertexBuffer.hpp:
@@ -700,6 +701,8 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
 
 /usr/include/c++/11/bits/functexcept.h:
+
+../inc/min_heap.h:
 
 /usr/include/c++/11/bits/concept_check.h:
 

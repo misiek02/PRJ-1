@@ -7,12 +7,11 @@ template <typename T> struct TreeNode {
   TreeNode<T> *left;
   TreeNode<T> *right;
 
-  // Parameterised Constructor
-  TreeNode(T value, TreeNode *left = nullptr, TreeNode *right = nullptr) {
-    this->value = value;
-    this->right = right;
-    this->left = left;
-  }
+  // Parameterised Constructors
+  TreeNode() : value(0), left(nullptr), right(nullptr) {}
+  TreeNode(int x) : value(x), left(nullptr), right(nullptr) {}
+  TreeNode(int x, TreeNode *left, TreeNode *right)
+      : value(x), left(left), right(right) {}
 };
 
 template <typename T> class BinaryTree {
@@ -82,6 +81,7 @@ void BinaryTree<T>::inOrderTraversal(TreeNode<T> *focusNode) {
     preOrderTraversal(focusNode->left);
     std::cout << focusNode->value << " ";
     preOrderTraversal(focusNode->right);
+    ;
   }
 }
 

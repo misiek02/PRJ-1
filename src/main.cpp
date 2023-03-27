@@ -8,6 +8,7 @@
 #include "stackTab.h"
 #include <SFML/Graphics.hpp>
 #include <iostream>
+#include <min_heap.h>
 
 int main() {
   //     QueueTab<int> y(4);
@@ -121,6 +122,7 @@ int main() {
   tree.inOrderTraversal(tree.root);
   std::cout << '\n';
   tree.postOrderTraversal(tree.root);
+  std::cout << '\n';
 
   return 0;
 }

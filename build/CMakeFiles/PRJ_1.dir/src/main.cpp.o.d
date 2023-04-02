@@ -147,8 +147,15 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
  /home/szylux/Desktop/PRJ-1/inc/binary_tree.h \
- /home/szylux/Desktop/PRJ-1/inc/list.h \
+ /home/szylux/Desktop/PRJ-1/inc/bubblesort.h \
+ /home/szylux/Desktop/PRJ-1/inc/min_heap.h /usr/include/c++/11/vector \
+ /usr/include/c++/11/bits/stl_uninitialized.h \
+ /usr/include/c++/11/bits/stl_vector.h \
+ /usr/include/c++/11/bits/stl_bvector.h \
+ /usr/include/c++/11/bits/vector.tcc \
+ /home/szylux/Desktop/PRJ-1/inc/insertsort.h \
  /home/szylux/Desktop/PRJ-1/inc/priority_queue.h \
+ /home/szylux/Desktop/PRJ-1/inc/list.h \
  /home/szylux/Desktop/PRJ-1/inc/queueTab.h \
  /home/szylux/Desktop/PRJ-1/inc/singly_linked_list.h \
  /home/szylux/Desktop/PRJ-1/inc/stackList.h \
@@ -183,11 +190,7 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: \
  /usr/include/c++/11/bits/enable_special_members.h \
  /usr/include/c++/11/bits/node_handle.h \
  /usr/include/c++/11/bits/unordered_map.h \
- /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/vector \
- /usr/include/c++/11/bits/stl_uninitialized.h \
- /usr/include/c++/11/bits/stl_vector.h \
- /usr/include/c++/11/bits/stl_bvector.h \
- /usr/include/c++/11/bits/vector.tcc \
+ /usr/include/c++/11/bits/erase_if.h \
  /usr/include/c++/11/pstl/execution_defs.h /usr/include/c++/11/locale \
  /usr/include/c++/11/bits/locale_facets_nonio.h /usr/include/c++/11/ctime \
  /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
@@ -246,5 +249,4 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: \
  /usr/include/SFML/Graphics/Glsl.hpp /usr/include/SFML/Graphics/Glsl.inl \
  /usr/include/SFML/Graphics/Sprite.hpp \
  /usr/include/SFML/Graphics/Text.hpp \
- /usr/include/SFML/Graphics/VertexBuffer.hpp \
- /home/szylux/Desktop/PRJ-1/inc/min_heap.h
+ /usr/include/SFML/Graphics/VertexBuffer.hpp

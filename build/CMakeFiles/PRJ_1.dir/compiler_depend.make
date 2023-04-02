@@ -183,8 +183,16 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
   ../inc/binary_tree.h \
-  ../inc/list.h \
+  ../inc/bubblesort.h \
+  ../inc/min_heap.h \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc \
+  ../inc/insertsort.h \
   ../inc/priority_queue.h \
+  ../inc/list.h \
   ../inc/queueTab.h \
   ../inc/singly_linked_list.h \
   ../inc/stackList.h \
@@ -230,11 +238,6 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/c++/11/bits/node_handle.h \
   /usr/include/c++/11/bits/unordered_map.h \
   /usr/include/c++/11/bits/erase_if.h \
-  /usr/include/c++/11/vector \
-  /usr/include/c++/11/bits/stl_uninitialized.h \
-  /usr/include/c++/11/bits/stl_vector.h \
-  /usr/include/c++/11/bits/stl_bvector.h \
-  /usr/include/c++/11/bits/vector.tcc \
   /usr/include/c++/11/pstl/execution_defs.h \
   /usr/include/c++/11/locale \
   /usr/include/c++/11/bits/locale_facets_nonio.h \
@@ -308,8 +311,7 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/SFML/Graphics/Glsl.inl \
   /usr/include/SFML/Graphics/Sprite.hpp \
   /usr/include/SFML/Graphics/Text.hpp \
-  /usr/include/SFML/Graphics/VertexBuffer.hpp \
-  ../inc/min_heap.h
+  /usr/include/SFML/Graphics/VertexBuffer.hpp
 
 
 /usr/include/SFML/Graphics/VertexBuffer.hpp:
@@ -382,6 +384,8 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/SFML/System/Vector3.inl:
 
+/usr/include/SFML/System/Vector2.hpp:
+
 /usr/include/c++/11/bits/stl_construct.h:
 
 /usr/include/c++/11/bits/cxxabi_forced.h:
@@ -413,6 +417,8 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/SFML/System/InputStream.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
+
+../inc/bubblesort.h:
 
 /usr/include/x86_64-linux-gnu/bits/select.h:
 
@@ -478,12 +484,6 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/SFML/System/Thread.hpp:
 
-/usr/include/SFML/Window/Export.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
-
-/usr/include/c++/11/bits/stl_iterator.h:
-
 /usr/include/c++/11/new:
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
@@ -507,6 +507,10 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h:
 
 /usr/include/c++/11/exception:
+
+/usr/include/SFML/System/Vector3.hpp:
+
+/usr/include/c++/11/bits/invoke.h:
 
 /usr/include/c++/11/bits/postypes.h:
 
@@ -604,9 +608,9 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/SFML/System.hpp:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
-
 /usr/include/SFML/System/Vector2.inl:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
 
 /usr/include/SFML/System/Thread.inl:
 
@@ -836,6 +840,26 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/c++/11/bits/istream.tcc:
 
+/usr/include/c++/11/vector:
+
+/usr/include/c++/11/bits/stl_uninitialized.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
+
+/usr/include/c++/11/bits/stl_bvector.h:
+
+/usr/include/c++/11/bits/vector.tcc:
+
+/usr/include/SFML/Window/Export.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
+
+/usr/include/c++/11/bits/stl_iterator.h:
+
+../inc/insertsort.h:
+
 /usr/include/c++/11/algorithm:
 
 ../inc/queueTab.h:
@@ -884,8 +908,6 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/c++/11/bits/hashtable_policy.h:
 
-/usr/include/SFML/System/Vector2.hpp:
-
 /usr/include/c++/11/bits/ptr_traits.h:
 
 /usr/include/stdint.h:
@@ -893,18 +915,6 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/endian.h:
 
 /usr/include/c++/11/bits/erase_if.h:
-
-/usr/include/c++/11/vector:
-
-/usr/include/c++/11/bits/stl_uninitialized.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
-
-/usr/include/c++/11/bits/stl_bvector.h:
-
-/usr/include/c++/11/bits/vector.tcc:
 
 /usr/include/c++/11/bits/locale_facets_nonio.h:
 
@@ -925,7 +935,3 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/SFML/System/String.inl:
 
 /usr/include/SFML/System/ThreadLocal.hpp:
-
-/usr/include/c++/11/bits/invoke.h:
-
-/usr/include/SFML/System/Vector3.hpp:

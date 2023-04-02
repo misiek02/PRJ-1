@@ -1,6 +1,9 @@
 #include "Array.h"
 #include "binary_tree.h"
+#include "bubblesort.h"
+#include "insertsort.h"
 #include "list.h"
+#include "min_heap.h"
 #include "priority_queue.h"
 #include "queueTab.h"
 #include "singly_linked_list.h"
@@ -8,7 +11,6 @@
 #include "stackTab.h"
 #include <SFML/Graphics.hpp>
 #include <iostream>
-#include <min_heap.h>
 
 int main() {
   //     QueueTab<int> y(4);
@@ -123,6 +125,18 @@ int main() {
   std::cout << '\n';
   tree.postOrderTraversal(tree.root);
   std::cout << '\n';
+
+  std::vector<int> vec;
+  for (int i = 0; i < 100; ++i) {
+    int randomNumber = std::rand() % 100;
+    vec.push_back(randomNumber);
+  }
+  bubbleSort<int>(vec.begin(), vec.end());
+
+  for (auto v : vec) {
+  std:
+    cout << v << std::endl;
+  }
 
   return 0;
 }

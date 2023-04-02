@@ -24,7 +24,7 @@ public:
                 int key); // adds first elem if queue is empty
   bool empty();           // returns 1 if queue is empty
   const T &min() const;   // returns elem from queue deosnt delete
-  void removeFront();     // removes and returnselem from queue
+  const T &removeFront(); // removes and returnselem from queue
 };
 
 template <typename T>
@@ -64,3 +64,14 @@ void PriorityQueue<T>::addFront(const T &newElement, int key) {
 }
 
 template <typename T> bool PriorityQueue<T>::empty() { return (head == NULL); }
+
+template <typename T> const T &PriorityQueue<T>::removeFront() {
+  if (head == NULL) {
+    std::cout << "Underflow\n";
+    exit(1);
+  }
+  PriorityNode<T> *temp = head;
+  head = head->next;
+
+  return temp->value;
+}

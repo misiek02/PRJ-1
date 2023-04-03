@@ -1,6 +1,7 @@
 #include "Array.h"
 #include "binary_tree.h"
 #include "bubblesort.h"
+#include "heapSort.h"
 #include "insertsort.h"
 #include "list.h"
 #include "min_heap.h"
@@ -126,17 +127,31 @@ int main() {
   tree.postOrderTraversal(tree.root);
   std::cout << '\n';
 
-  std::vector<int> vec;
-  for (int i = 0; i < 100; ++i) {
-    int randomNumber = std::rand() % 100;
-    vec.push_back(randomNumber);
-  }
-  bubbleSort<int>(vec.begin(), vec.end());
+  // std::vector<int> vec;
+  // for (int i = 0; i < 100; ++i) {
+  //   int randomNumber = std::rand() % 100;
+  //   vec.push_back(randomNumber);
+  // }
+  // heapSort<int>(vec.begin(), vec.end());
 
-  for (auto v : vec) {
-  std:
-    cout << v << std::endl;
-  }
+  // for (auto v : vec) {
+  // std:
+  //   cout << v << std::endl;
+  // }
+
+  MinHeap<int> heap(10);
+  heap.insertKey(21);
+  heap.insertKey(2121);
+  heap.insertKey(1);
+  heap.insertKey(35);
+  heap.insertKey(52);
+  heap.insertKey(64);
+  heap.insertKey(-77);
+  std::cout << "safdsafsf" << std::endl;
+  std::cout << heap.extractMin() << std::endl;
+  std::cout << heap.extractMin() << std::endl;
+  std::cout << heap.extractMin() << std::endl;
+  std::cout << heap.extractMin() << std::endl;
 
   return 0;
 }

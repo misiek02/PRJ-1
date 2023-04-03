@@ -148,11 +148,20 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: \
  /usr/include/c++/11/bits/istream.tcc \
  /home/szylux/Desktop/PRJ-1/inc/binary_tree.h \
  /home/szylux/Desktop/PRJ-1/inc/bubblesort.h \
- /home/szylux/Desktop/PRJ-1/inc/min_heap.h /usr/include/c++/11/vector \
+ /home/szylux/Desktop/PRJ-1/inc/min_heap.h /usr/include/c++/11/climits \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
+ /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+ /usr/include/linux/limits.h \
+ /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/uio_lim.h /usr/include/c++/11/vector \
  /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
+ /home/szylux/Desktop/PRJ-1/inc/heapSort.h \
  /home/szylux/Desktop/PRJ-1/inc/insertsort.h \
  /home/szylux/Desktop/PRJ-1/inc/priority_queue.h \
  /home/szylux/Desktop/PRJ-1/inc/list.h \

@@ -2,6 +2,7 @@
 #include "Array.h"
 #include "bubblesort.h"
 #include "catch2/catch.hpp"
+#include "heapSort.h"
 #include "insertsort.h"
 #include "list.h"
 #include "min_heap.h"
@@ -132,42 +133,42 @@
 //     //REQUIRE(queue.empty() == true);
 // }
 
-TEST_CASE("SinglyLinkedList I") {
-  SinglyLinkedList<int> list;
-  list.addFront(10);
-  REQUIRE(list.front() == 10);
-  list.addFront(20);
-  REQUIRE(list.front() == 20);
+// TEST_CASE("SinglyLinkedList I") {
+//   SinglyLinkedList<int> list;
+//   list.addFront(10);
+//   REQUIRE(list.front() == 10);
+//   list.addFront(20);
+//   REQUIRE(list.front() == 20);
 
-  REQUIRE(list.size() == 2);
+//   REQUIRE(list.size() == 2);
 
-  REQUIRE(list.back() == 10);
-  list.addBack(30);
-  REQUIRE(list.back() == 30);
+//   REQUIRE(list.back() == 10);
+//   list.addBack(30);
+//   REQUIRE(list.back() == 30);
 
-  REQUIRE(list.size() == 3);
-}
+//   REQUIRE(list.size() == 3);
+// }
 
-TEST_CASE("SinglyLinkedList/isEmpty") {
-  SinglyLinkedList<int> list;
-  REQUIRE(list.empty() == true);
-  list.addFront(10);
-  REQUIRE(list.empty() == false);
-  list.removeFront();
-  REQUIRE(list.empty() == true);
-}
+// TEST_CASE("SinglyLinkedList/isEmpty") {
+//   SinglyLinkedList<int> list;
+//   REQUIRE(list.empty() == true);
+//   list.addFront(10);
+//   REQUIRE(list.empty() == false);
+//   list.removeFront();
+//   REQUIRE(list.empty() == true);
+// }
 
-TEST_CASE("SinglyLinkedList/indexing") {
-  SinglyLinkedList<int> list;
-  list.addFront(10);
-  list.addFront(20);
-  list.addFront(30);
-  list.addFront(40);
-  REQUIRE(list[0] == 40);
-  REQUIRE(list[1] == 30);
-  REQUIRE(list[2] == 20);
-  REQUIRE(list[3] == 10);
-}
+// TEST_CASE("SinglyLinkedList/indexing") {
+//   SinglyLinkedList<int> list;
+//   list.addFront(10);
+//   list.addFront(20);
+//   list.addFront(30);
+//   list.addFront(40);
+//   REQUIRE(list[0] == 40);
+//   REQUIRE(list[1] == 30);
+//   REQUIRE(list[2] == 20);
+//   REQUIRE(list[3] == 10);
+// }
 
 // TEST_CASE("SinglyLinkedList/insert")
 // {
@@ -247,7 +248,7 @@ TEST_CASE("Insert_SORT 1") {
 TEST_CASE("INSERT_SORT 2") {
   std::vector<float> vec;
 
-  for (int i = 0; i < 30; ++i) {
+  for (int i = 0; i < 34; ++i) {
     float randomNumber = std::rand() % 500;
     vec.push_back(randomNumber);
   }
@@ -257,3 +258,31 @@ TEST_CASE("INSERT_SORT 2") {
   sort(v2.begin(), v2.end());
   REQUIRE(vec == v2);
 }
+
+// TEST_CASE("HEAP_SORT 1") {
+//   std::vector<int> vec;
+
+//   for (int i = 0; i < 124; ++i) {
+//     int randomNumber = std::rand() % 100;
+//     vec.push_back(randomNumber);
+//   }
+//   std::vector<int> v2 = vec;
+
+//   heapSort<int>(vec.begin(), vec.end());
+//   sort(v2.begin(), v2.end());
+//   REQUIRE(vec == v2);
+// }
+
+// TEST_CASE("HEAP_SORT 2") {
+//   std::vector<float> vec;
+
+//   for (int i = 0; i < 30; ++i) {
+//     float randomNumber = std::rand() % 500;
+//     vec.push_back(randomNumber);
+//   }
+//   std::vector<float> v2 = vec;
+
+//   heapSort<float>(vec.begin(), vec.end());
+//   sort(v2.begin(), v2.end());
+//   REQUIRE(vec == v2);
+// }

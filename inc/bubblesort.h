@@ -1,11 +1,7 @@
 #pragma once
+#include "bubblesort.h"
 #include "min_heap.h"
 #include <vector>
-template <typename T> void ourswap(T &a, T &b) {
-  T temp = a;
-  a = b;
-  b = temp;
-}
 
 template <typename T>
 void bubbleSort(typename std::vector<T>::iterator start,

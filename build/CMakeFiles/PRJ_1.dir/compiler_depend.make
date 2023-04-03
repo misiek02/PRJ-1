@@ -185,11 +185,22 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: ../src/main.cpp \
   ../inc/binary_tree.h \
   ../inc/bubblesort.h \
   ../inc/min_heap.h \
+  /usr/include/c++/11/climits \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
+  /usr/include/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+  /usr/include/linux/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
   /usr/include/c++/11/vector \
   /usr/include/c++/11/bits/stl_uninitialized.h \
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
+  ../inc/heapSort.h \
   ../inc/insertsort.h \
   ../inc/priority_queue.h \
   ../inc/list.h \
@@ -358,8 +369,6 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/SFML/Graphics/CircleShape.hpp:
 
-/usr/include/SFML/Graphics/Export.hpp:
-
 /usr/include/SFML/Graphics/BlendMode.hpp:
 
 /usr/include/SFML/Window/WindowStyle.hpp:
@@ -386,11 +395,25 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/SFML/System/Vector2.hpp:
 
+/usr/include/SFML/System/ThreadLocalPtr.inl:
+
+/usr/include/SFML/System/ThreadLocalPtr.hpp:
+
+/usr/include/SFML/System/ThreadLocal.hpp:
+
+/usr/include/SFML/System/Thread.hpp:
+
+/usr/include/c++/11/bits/stream_iterator.h:
+
+/usr/include/SFML/System/Utf.inl:
+
+/usr/include/c++/11/bits/unique_ptr.h:
+
+/usr/include/c++/11/bits/locale_conv.h:
+
 /usr/include/c++/11/bits/stl_construct.h:
 
 /usr/include/c++/11/bits/cxxabi_forced.h:
-
-/usr/include/c++/11/bits/basic_string.h:
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
 
@@ -399,6 +422,12 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/SFML/Graphics/RenderTexture.hpp:
 
 /usr/include/c++/11/backward/binders.h:
+
+/usr/include/SFML/System/Vector2.inl:
+
+/usr/include/SFML/System/Thread.inl:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
 
 /usr/include/c++/11/bits/locale_classes.h:
 
@@ -462,8 +491,6 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/types.h:
 
-/usr/include/SFML/System/Utf.inl:
-
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
 
 /usr/include/c++/11/bits/unordered_map.h:
@@ -482,10 +509,6 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/SFML/System/Export.hpp:
 
-/usr/include/SFML/System/Thread.hpp:
-
-/usr/include/c++/11/new:
-
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
@@ -493,8 +516,6 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/wchar.h:
 
 /usr/include/c++/11/bits/cxxabi_init_exception.h:
-
-/usr/include/c++/11/string:
 
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
 
@@ -517,12 +538,6 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/c++/11/cstdint:
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
-
-/usr/include/SFML/System/ThreadLocalPtr.inl:
-
-/usr/include/c++/11/debug/debug.h:
-
-/usr/include/features-time64.h:
 
 /usr/include/c++/11/bits/stringfwd.h:
 
@@ -608,15 +623,7 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/SFML/System.hpp:
 
-/usr/include/SFML/System/Vector2.inl:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
-
-/usr/include/SFML/System/Thread.inl:
-
 /usr/include/c++/11/ostream:
-
-/usr/include/c++/11/bits/unique_ptr.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
@@ -668,13 +675,23 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/SFML/System/Utf.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/floatn.h:
-
 /usr/include/c++/11/iterator:
+
+/usr/include/x86_64-linux-gnu/bits/floatn.h:
 
 /usr/include/c++/11/bits/range_access.h:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
+
+/usr/include/x86_64-linux-gnu/bits/local_lim.h:
+
+/usr/include/c++/11/bits/basic_string.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/SFML/Graphics/Export.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
 /usr/include/c++/11/bits/exception_ptr.h:
 
@@ -720,11 +737,11 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
 
+/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
+
 /usr/include/c++/11/locale:
 
 /usr/include/ctype.h:
-
-/usr/include/c++/11/bits/stream_iterator.h:
 
 /usr/include/c++/11/bits/cpp_type_traits.h:
 
@@ -745,8 +762,6 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
 ../inc/stackTab.h:
-
-/usr/include/SFML/System/ThreadLocalPtr.hpp:
 
 /usr/include/SFML/Window/Mouse.hpp:
 
@@ -794,6 +809,8 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/c++/11/bits/basic_string.tcc:
 
+../inc/heapSort.h:
+
 /usr/include/c++/11/bits/locale_classes.tcc:
 
 /usr/include/c++/11/system_error:
@@ -839,6 +856,32 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/c++/11/istream:
 
 /usr/include/c++/11/bits/istream.tcc:
+
+/usr/include/c++/11/new:
+
+/usr/include/c++/11/climits:
+
+/usr/include/c++/11/array:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h:
+
+/usr/include/c++/11/debug/debug.h:
+
+/usr/include/features-time64.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h:
+
+/usr/include/limits.h:
+
+/usr/include/c++/11/bits/stl_relops.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
+
+/usr/include/c++/11/string:
+
+/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
 
 /usr/include/c++/11/vector:
 
@@ -888,8 +931,6 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/SFML/System/String.hpp:
 
-/usr/include/c++/11/bits/stl_relops.h:
-
 /usr/include/c++/11/bits/stl_algo.h:
 
 /usr/include/c++/11/pstl/execution_defs.h:
@@ -900,13 +941,21 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/c++/11/bits/stl_heap.h:
 
-/usr/include/c++/11/array:
-
 /usr/include/c++/11/bits/uses_allocator.h:
 
 /usr/include/c++/11/bits/hashtable.h:
 
 /usr/include/c++/11/bits/hashtable_policy.h:
+
+/usr/include/SFML/Window/Event.hpp:
+
+/usr/include/SFML/System/String.inl:
+
+/usr/include/c++/11/bits/codecvt.h:
+
+/usr/include/c++/11/bits/basic_ios.tcc:
+
+/usr/include/c++/11/bits/enable_special_members.h:
 
 /usr/include/c++/11/bits/ptr_traits.h:
 
@@ -918,20 +967,4 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/c++/11/bits/locale_facets_nonio.h:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h:
-
 /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h:
-
-/usr/include/c++/11/bits/locale_conv.h:
-
-/usr/include/SFML/Window/Event.hpp:
-
-/usr/include/c++/11/bits/codecvt.h:
-
-/usr/include/c++/11/bits/basic_ios.tcc:
-
-/usr/include/c++/11/bits/enable_special_members.h:
-
-/usr/include/SFML/System/String.inl:
-
-/usr/include/SFML/System/ThreadLocal.hpp:

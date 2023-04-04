@@ -12,6 +12,7 @@
 #include "stackTab.h"
 #include <SFML/Graphics.hpp>
 #include <iostream>
+#include <quicksort.h>
 
 int main() {
   //     QueueTab<int> y(4);

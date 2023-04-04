@@ -439,8 +439,11 @@ CMakeFiles/tests.dir/src/tests.cpp.o: ../src/tests.cpp \
   /usr/include/SFML/Graphics/Glsl.inl \
   /usr/include/SFML/Graphics/Sprite.hpp \
   /usr/include/SFML/Graphics/Text.hpp \
-  /usr/include/SFML/Graphics/VertexBuffer.hpp
+  /usr/include/SFML/Graphics/VertexBuffer.hpp \
+  ../inc/quicksort.h
 
+
+../inc/quicksort.h:
 
 /usr/include/SFML/Graphics/Text.hpp:
 

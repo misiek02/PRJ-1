@@ -17,6 +17,7 @@ public:
   T dequeue();        // delete an element from queue an return it
   std::size_t size(); //  shows number of element in the queue
   const T &front();   // returns first element in the queue (doesnt delete it)
+  bool empty();
 };
 
 // Parameterised Constructor
@@ -46,6 +47,8 @@ template <typename T> const T &QueueTab<T>::front() {
   return t;
 }
 
+template <typename T> bool QueueTab<T>::empty() { return (q_front == -1); }
+
 //  SIZE - returns first element in the queue (doesnt delete it)
 template <typename T> std::size_t QueueTab<T>::size() {
   if (q_front == -1) {
@@ -57,4 +60,12 @@ template <typename T> std::size_t QueueTab<T>::size() {
 }
 
 //  DEQUEUE - delete an element from queue an returns it
-template <typename T> T QueueTab<T>::dequeue() { return T(); }
+template <typename T> T QueueTab<T>::dequeue() {
+  if (q_front == -1) {
+    std::cout << "Underflow\n";
+    exit(1);
+  }
+
+  T static t = tab[0];
+  return t;
+}

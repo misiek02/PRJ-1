@@ -42,18 +42,20 @@ template <typename T> void StackTab<T>::push(const T &value) {
 template <typename T> bool StackTab<T>::empty() {
   if (s_top == -1) {
     std::cout << "Stack is empty\n";
-    return 0;
+    return 1;
   }
 
   std::cout << "Stack ISN'T empty\n";
-  return 1;
+  return 0;
 }
 
 // POP - removes an element from the top
 template <typename T> T StackTab<T>::pop() {
+  T temp;
   if (!empty()) {
-    tab[s_top] = 0;
+    temp = tab[s_top];
     --s_top;
+    return temp;
   }
 
   else
@@ -68,8 +70,9 @@ template <typename T> std::size_t StackTab<T>::size() {
     std::cout << "Queue empty\n";
     exit(1);
   }
-  std::cout << "Number of elements :" << s_top++ << std::endl;
-  return s_top;
+  int elems = s_top + 1;
+  std::cout << "Number of elements :" << elems << std::endl;
+  return elems;
 }
 
 // TOP - returns value from the top (doesn't pop it)

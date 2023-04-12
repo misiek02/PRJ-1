@@ -120,6 +120,7 @@ int main() {
   tree.addNode(37);
   tree.addNode(43);
   tree.addNode(30);
+  tree.addNode(300);
 
   tree.preOrderTraversal(tree.root);
   std::cout << '\n';
@@ -127,6 +128,8 @@ int main() {
   std::cout << '\n';
   tree.postOrderTraversal(tree.root);
   std::cout << '\n';
+
+  std::cout << tree.height(tree.root) << " - Tree height" << '\n';
 
   // std::vector<int> vec;
   // for (int i = 0; i < 100; ++i) {

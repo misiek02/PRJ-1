@@ -24,6 +24,9 @@ public:
   // Adds new node to tree if smaller than actual then left
   void addNode(T newElement);
 
+  // Returns height of the tree
+  int height(TreeNode<T> *root);
+
   // Prints node's values in the given order: current->left->right
   void preOrderTraversal(TreeNode<T> *focusNode);
 
@@ -62,6 +65,26 @@ template <typename T> void BinaryTree<T>::addNode(T newElement) {
       }
     }
   }
+}
+
+// height - Returns height of the tree
+template <typename T> int BinaryTree<T>::height(TreeNode<T> *root) {
+  int h = 0;
+
+  if (root->left == nullptr && root->right == nullptr)
+    return 0;
+
+  if (root->left) {
+    h = height(root->left);
+    h++;
+  }
+
+  if (root->right) {
+    h = height(root->right);
+    h++;
+  }
+
+  return h;
 }
 
 // Prints node's values in the given order: current->left->right

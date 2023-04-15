@@ -1,6 +1,7 @@
 #include "Array.h"
 #include "binary_tree.h"
 #include "bubblesort.h"
+#include "graph.h"
 #include "heapSort.h"
 #include "insertsort.h"
 #include "list.h"
@@ -96,66 +97,78 @@ int main() {
   //     std::cout << arr.find(1) << std::endl; // prints "0"
   //     std::cout << arr.find(2) << std::endl; // prints "-1"
 
-  SinglyLinkedList<int> list;
-  list.insert(999, 3);
+  // SinglyLinkedList<int> list;
+  // list.insert(999, 3);
 
-  PriorityQueue<int> pque;
-  int x;
-  x = pque.empty();
-  pque.insert(87, 9);
-  pque.insert(87, 4);
-  pque.insert(94, 3);
-  pque.insert(9, 8);
+  // PriorityQueue<int> pque;
+  // int x;
+  // x = pque.empty();
+  // pque.insert(87, 9);
+  // pque.insert(87, 4);
+  // pque.insert(94, 3);
+  // pque.insert(9, 8);
 
-  pque.insert(5129, 1);
-  pque.insert(239, 1);
-  pque.insert(4219, 1);
+  // pque.insert(5129, 1);
+  // pque.insert(239, 1);
+  // pque.insert(4219, 1);
 
-  BinaryTree<int> tree;
+  // BinaryTree<int> tree;
 
-  tree.addNode(50);
-  tree.addNode(25);
-  tree.addNode(75);
-  tree.addNode(12);
-  tree.addNode(37);
-  tree.addNode(43);
-  tree.addNode(30);
-  tree.addNode(300);
+  // tree.addNode(50);
+  // tree.addNode(25);
+  // tree.addNode(75);
+  // tree.addNode(12);
+  // tree.addNode(37);
+  // tree.addNode(43);
+  // tree.addNode(30);
+  // tree.addNode(300);
 
-  tree.preOrderTraversal(tree.root);
-  std::cout << '\n';
-  tree.inOrderTraversal(tree.root);
-  std::cout << '\n';
-  tree.postOrderTraversal(tree.root);
-  std::cout << '\n';
+  // tree.preOrderTraversal(tree.root);
+  // std::cout << '\n';
+  // tree.inOrderTraversal(tree.root);
+  // std::cout << '\n';
+  // tree.postOrderTraversal(tree.root);
+  // std::cout << '\n';
 
-  std::cout << tree.height(tree.root) << " - Tree height" << '\n';
+  // std::cout << tree.height(tree.root) << " - Tree height" << '\n';
 
-  // std::vector<int> vec;
-  // for (int i = 0; i < 100; ++i) {
-  //   int randomNumber = std::rand() % 100;
-  //   vec.push_back(randomNumber);
-  // }
-  // heapSort<int>(vec.begin(), vec.end());
+  // // std::vector<int> vec;
+  // // for (int i = 0; i < 100; ++i) {
+  // //   int randomNumber = std::rand() % 100;
+  // //   vec.push_back(randomNumber);
+  // // }
+  // // heapSort<int>(vec.begin(), vec.end());
 
-  // for (auto v : vec) {
-  // std:
-  //   cout << v << std::endl;
-  // }
+  // // for (auto v : vec) {
+  // // std:
+  // //   cout << v << std::endl;
+  // // }
 
-  MinHeap<int> heap(10);
-  heap.insertKey(21);
-  heap.insertKey(2121);
-  heap.insertKey(1);
-  heap.insertKey(35);
-  heap.insertKey(52);
-  heap.insertKey(64);
-  heap.insertKey(-77);
-  std::cout << "safdsafsf" << std::endl;
-  std::cout << heap.extractMin() << std::endl;
-  std::cout << heap.extractMin() << std::endl;
-  std::cout << heap.extractMin() << std::endl;
-  std::cout << heap.extractMin() << std::endl;
+  // MinHeap<int> heap(10);
+  // heap.insertKey(21);
+  // heap.insertKey(2121);
+  // heap.insertKey(1);
+  // heap.insertKey(35);
+  // heap.insertKey(52);
+  // heap.insertKey(64);
+  // heap.insertKey(-77);
+  // std::cout << "safdsafsf" << std::endl;
+  // std::cout << heap.extractMin() << std::endl;
+  // std::cout << heap.extractMin() << std::endl;
+  // std::cout << heap.extractMin() << std::endl;
+  // std::cout << heap.extractMin() << std::endl;
+
+  Graph<int> g;
+
+  g.addEdge(0, 4);
+  g.addEdge(230, 11);
+  g.addEdge(55, 432);
+  g.addEdge(21, 43);
+  g.addEdge(21, 76);
+  g.addEdge(98, 22);
+  g.addEdge(222, 69);
+  g.addEdge(21, 33);
+  g.printGraph();
 
   return 0;
 }

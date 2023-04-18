@@ -1,7 +1,7 @@
 #include "Array.h"
+#include "adjacencyList.h"
 #include "binary_tree.h"
 #include "bubblesort.h"
-#include "graph.h"
 #include "heapSort.h"
 #include "insertsort.h"
 #include "list.h"
@@ -12,6 +12,8 @@
 #include "stackList.h"
 #include "stackTab.h"
 //#include <SFML/Graphics.hpp>
+#include "EdgeList.h"
+#include "weight.h"
 #include <iostream>
 #include <quicksort.h>
 
@@ -158,17 +160,22 @@ int main() {
   // std::cout << heap.extractMin() << std::endl;
   // std::cout << heap.extractMin() << std::endl;
 
-  Graph<int> g;
+  EdgeList<int> eee;
+  pair<int, int> kau;
+  kau.first = 22;
+  kau.second = 3;
+  eee.addEdge(kau, 3);
+  kau.first = 525;
+  kau.second = 99;
+  eee.addEdge(kau, 69);
 
-  g.addEdge(0, 4);
-  g.addEdge(230, 11);
-  g.addEdge(55, 432);
-  g.addEdge(21, 43);
-  g.addEdge(21, 76);
-  g.addEdge(98, 22);
-  g.addEdge(222, 69);
-  g.addEdge(21, 33);
-  g.printGraph();
+  eee.printEdges();
+
+  vector<pair<int, int>> x = {{1, 2}, {1, 3}, {3, 4}, {1, 777}, {777, 12}};
+
+  AdjacencyList<int> adjL;
+  adjL.edgeListToAdj(x);
+  adjL.printAdjList();
 
   return 0;
 }

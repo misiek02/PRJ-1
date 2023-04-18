@@ -8,8 +8,8 @@ template <typename T> class AdjacencyList {
 
 public:
   // Modiifies edge list ot adjacency list
-  void edgeListToAdj(std::vector<std::pair<T, T>> edges);
-  void printAdjList();
+  virtual void edgeListToAdj(std::vector<std::pair<T, T>> edges);
+  virtual void printAdjList();
 };
 
 template <typename T>

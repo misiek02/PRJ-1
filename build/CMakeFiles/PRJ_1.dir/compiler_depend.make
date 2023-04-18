@@ -225,10 +225,13 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: ../src/main.cpp \
   ../inc/stackList.h \
   ../inc/stackTab.h \
   ../inc/EdgeList.h \
+  ../inc/adjacencyListWeighted.h \
   ../inc/weight.h \
   /usr/include/c++/11/cstddef \
   ../inc/quicksort.h
 
+
+../inc/adjacencyListWeighted.h:
 
 ../inc/stackList.h:
 

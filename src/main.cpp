@@ -13,6 +13,7 @@
 #include "stackTab.h"
 //#include <SFML/Graphics.hpp>
 #include "EdgeList.h"
+#include "adjacencyListWeighted.h"
 #include "weight.h"
 #include <iostream>
 #include <quicksort.h>
@@ -176,6 +177,11 @@ int main() {
   AdjacencyList<int> adjL;
   adjL.edgeListToAdj(x);
   adjL.printAdjList();
+
+  AdjacencyListWeighted<int> adjW;
+  vector<int> wei = {2, 5, 1, 6, 2222};
+  adjW.edgeListToAdj(x, wei);
+  adjW.printAdjList();
 
   return 0;
 }

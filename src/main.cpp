@@ -11,7 +11,7 @@
 #include "singly_linked_list.h"
 #include "stackList.h"
 #include "stackTab.h"
-#include <SFML/Graphics.hpp>
+//#include <SFML/Graphics.hpp>
 #include <iostream>
 #include <quicksort.h>
 

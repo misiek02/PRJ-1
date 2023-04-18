@@ -1,3 +1,6 @@
-/home/michal/CLionProjects/PRJ-1/cmake-build-debug/CMakeFiles/PRJ_1.dir
-/home/michal/CLionProjects/PRJ-1/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/michal/CLionProjects/PRJ-1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/ADMIN/CLionProjects/PRJ-1/cmake-build-debug/CMakeFiles/PRJ_1.dir
+C:/Users/ADMIN/CLionProjects/PRJ-1/cmake-build-debug/CMakeFiles/tests.dir
+C:/Users/ADMIN/CLionProjects/PRJ-1/cmake-build-debug/CMakeFiles/package.dir
+C:/Users/ADMIN/CLionProjects/PRJ-1/cmake-build-debug/CMakeFiles/package_source.dir
+C:/Users/ADMIN/CLionProjects/PRJ-1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/ADMIN/CLionProjects/PRJ-1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

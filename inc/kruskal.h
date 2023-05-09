@@ -56,6 +56,7 @@ public:
   // Function to add edge in a graph
   void addEdge(T x, int y, T w) { edgelist.push_back({w, x, y}); }
 
+  // KRUSKAL KRUSKAL
   void kruskal() {
 
     sort(edgelist.begin(), edgelist.end());

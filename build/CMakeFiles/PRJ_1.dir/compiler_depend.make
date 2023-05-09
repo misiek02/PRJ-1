@@ -240,6 +240,8 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/c++/11/pstl/execution_defs.h \
   ../inc/weight.h \
   /usr/include/c++/11/cstddef \
+  /usr/include/c++/11/ctime \
+  ../inc/prim.h \
   ../inc/quicksort.h
 
 
@@ -513,6 +515,8 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/c++/11/iosfwd:
 
+/usr/include/c++/11/ctime:
+
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
 /usr/include/c++/11/debug/assertions.h:
@@ -538,6 +542,8 @@ CMakeFiles/PRJ_1.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
 ../src/main.cpp:
+
+../inc/prim.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 

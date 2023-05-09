@@ -21,8 +21,8 @@ public:
   }
 
   // find function
-  T find(int i) {
-    if (i == -1)
+  T find(T i) {
+    if (parent[i] == -1)
       return i;
 
     return parent[i] = find(parent[i]);
@@ -46,24 +46,37 @@ public:
   }
 };
 
-template <typename T> void kruskal(EdgeList<T> &edgeL) {
+template <typename T> class Graph {
+  vector<vector<T>> edgelist;
+  int V;
 
-  int n = edgeL.getWeights().size();
+public:
+  Graph(int V) { this->V = V; }
 
-  // edges vector with weight as 1 vector
-  std::vector<std::vector<T>> ee(n);
+  // Function to add edge in a graph
+  void addEdge(T x, int y, T w) { edgelist.push_back({w, x, y}); }
 
-  for (int i = 0; i < n; i++) {
-    ee[i].push_back(edgeL.getWeights()[i]);
-    ee[i].push_back(edgeL.getEdges()[i].first);
-    ee[i].push_back(edgeL.getEdges()[i].second);
+  void kruskal() {
+
+    sort(edgelist.begin(), edgelist.end());
+
+    DSU<T> s(V);
+    int cost = 0;
+
+    std::cout << "Edges of minimum spanning tree: " << std::endl;
+    for (auto edge : edgelist) {
+      int w = edge[0];
+      int x = edge[1];
+      int y = edge[2];
+
+      // Take edge if doesnt form circuit
+      if (s.find(x) != s.find(y)) {
+        s.unite(x, y);
+        cost += w;
+        std::cout << x << " - " << y << " cost: " << w << std::endl;
+      }
+    }
+
+    std::cout << "Total cost of minimum spanning tree: " << cost << std::endl;
   }
-
-  sort(ee.begin(), ee.end());
-
-  for (int i = 0; i < n; i++) {
-    std::cout << ee[i][0] << " ";
-    std::cout << ee[i][1] << " ";
-    std::cout << ee[i][2] << std::endl;
-  }
-}
+};

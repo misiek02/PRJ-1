@@ -162,21 +162,26 @@ int main() {
   // std::cout << heap.extractMin() << std::endl;
   // std::cout << heap.extractMin() << std::endl;
 
-  EdgeList<int> eee;
-  pair<int, int> kau;
-  kau.first = 22;
-  kau.second = 3;
-  eee.addEdge(kau, 69);
-  kau.first = 525;
-  kau.second = 99;
-  eee.addEdge(kau, 21);
-  kau.first = 22;
-  kau.second = 3;
-  eee.addEdge(kau, 1);
+  // EdgeList<int> eee;
+  // pair<int, int> kau;
+  // kau.first = 0;
+  // kau.second = 1;
+  // eee.addEdge(kau, 10);
+  // kau.first = 1;
+  // kau.second = 3;
+  // eee.addEdge(kau, 15);
+  // kau.first = 3;
+  // kau.second = 7;
 
-  eee.printEdges();
-
-  kruskal(eee);
+  // eee.addEdge(kau, 152);
+  Graph<int> g(7);
+  g.addEdge(0, 1, 10);
+  g.addEdge(1, 3, 15);
+  g.addEdge(2, 3, 4);
+  g.addEdge(2, 0, 6);
+  g.addEdge(0, 3, 5);
+  g.addEdge(4, 3, 66);
+  g.kruskal();
 
   // AdjacencyListWeighted<int> adjW;
   // vector<int> wei = {2, 5, 1, 6, 2222};

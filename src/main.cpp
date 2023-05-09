@@ -14,6 +14,7 @@
 //#include <SFML/Graphics.hpp>
 #include "EdgeList.h"
 #include "adjacencyListWeighted.h"
+#include "kruskal.h"
 #include "weight.h"
 #include <iostream>
 #include <quicksort.h>
@@ -165,23 +166,22 @@ int main() {
   pair<int, int> kau;
   kau.first = 22;
   kau.second = 3;
-  eee.addEdge(kau, 3);
+  eee.addEdge(kau, 69);
   kau.first = 525;
   kau.second = 99;
-  eee.addEdge(kau, 69);
+  eee.addEdge(kau, 21);
+  kau.first = 22;
+  kau.second = 3;
+  eee.addEdge(kau, 1);
 
   eee.printEdges();
 
-  vector<pair<int, int>> x = {{1, 2}, {1, 3}, {3, 4}, {1, 777}, {777, 12}};
+  kruskal(eee);
 
-  AdjacencyList<int> adjL;
-  adjL.edgeListToAdj(x);
-  adjL.printAdjList();
-
-  AdjacencyListWeighted<int> adjW;
-  vector<int> wei = {2, 5, 1, 6, 2222};
-  adjW.edgeListToAdj(x, wei);
-  adjW.printAdjList();
+  // AdjacencyListWeighted<int> adjW;
+  // vector<int> wei = {2, 5, 1, 6, 2222};
+  // adjW.edgeListToAdj(x, wei);
+  // adjW.printAdjList();
 
   return 0;
 }

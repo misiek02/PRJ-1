@@ -24,7 +24,7 @@ void AdjacencyListWeighted<T>::edgeListToAdj(std::vector<std::pair<T, T>> edges,
 }
 
 template <typename T> void AdjacencyListWeighted<T>::printAdjList() {
-  std::cout << "-- ADJACENCY LIST (VETTEX, WEIGHT) --" << std::endl;
+  std::cout << "-- ADJACENCY LIST (VERTEX, WEIGHT) --" << std::endl;
 
   for (auto it = adjacencyList.begin(); it != adjacencyList.end(); it++) {
     std::cout << "Vertex " << it->first << ": ";

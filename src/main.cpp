@@ -11,6 +11,7 @@
 #include "singly_linked_list.h"
 #include "stackList.h"
 #include "stackTab.h"
+#include "Dijkstry.h"
 //#include <SFML/Graphics.hpp>
 #include "EdgeList.h"
 #include "adjacencyListWeighted.h"
@@ -53,14 +54,35 @@ int main() {
   //             << std::endl;
   // }
 
-  int graph[V][V] = {{0, 2, 0, 6, 0},
-                     {2, 0, 3, 8, 5},
-                     {0, 3, 0, 0, 7},
-                     {6, 8, 0, 0, 9},
-                     {0, 5, 7, 9, 0}};
+//  int graph[V][V] = {{0, 2, 0, 6, 0},
+//                     {2, 0, 3, 8, 5},
+//                     {0, 3, 0, 0, 7},
+//                     {6, 8, 0, 0, 9},
+//                     {0, 5, 7, 9, 0}};
+//
+//  // Print the solution
+//  primMST(graph);
+//
+//  return 0;
 
-  // Print the solution
-  primMST(graph);
+    Graphh<int> graph;
+    graph.AddVertex(1);
+    graph.AddVertex(2);
+    graph.AddVertex(3);
+    graph.AddVertex(4);
+    graph.AddVertex(5);
 
-  return 0;
+    graph.AddEdge(1, 2, 10);
+    graph.AddEdge(1, 3, 5);
+    graph.AddEdge(2, 3, 2);
+    graph.AddEdge(2, 4, 1);
+    graph.AddEdge(3, 2, 3);
+    graph.AddEdge(3, 4, 9);
+    graph.AddEdge(3, 5, 2);
+    graph.AddEdge(4, 5, 4);
+
+    graph.Dijkstra(1);
+    graph.PrintShortestDistances();
+
+    return 0;
 }

@@ -21,20 +21,17 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3143d1ee-2bb6-496d-a5b8-e2e67d34239f" name="Changes" comment="list and some main fixtures&#10;Cmake recompabiling">
-      <change afterPath="$PROJECT_DIR$/inc/EdgeList.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inc/weight.h" afterDir="false" />
+    <list default="true" id="3143d1ee-2bb6-496d-a5b8-e2e67d34239f" name="Changes" comment="edge list and weighing matrix">
+      <change afterPath="$PROJECT_DIR$/inc/Dijkstry.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/SFML/doc/html/Glsl_8hpp_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SFML/doc/html/Glsl_8hpp_source.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +43,9 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../PRJ-1\exportToHTML" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -137,7 +137,13 @@
       <workItem from="1678801770613" duration="818000" />
       <workItem from="1679425618862" duration="899000" />
       <workItem from="1681793372941" duration="4000" />
-      <workItem from="1681793634679" duration="1052000" />
+      <workItem from="1681793634679" duration="1129000" />
+      <workItem from="1681794941732" duration="42000" />
+      <workItem from="1681795224467" duration="2354000" />
+      <workItem from="1681901871446" duration="398000" />
+      <workItem from="1682101226111" duration="45000" />
+      <workItem from="1683659029754" duration="1004000" />
+      <workItem from="1684886176573" duration="733000" />
     </task>
     <task id="LOCAL-00001" summary="ez">
       <created>1678310810216</created>
@@ -167,11 +173,24 @@
       <option name="project" value="LOCAL" />
       <updated>1678774587625</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="edge list and weighing matrix">
+      <created>1681794762780</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1681794762780</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VCPKGProject">
+    <isAutomaticEditVcpkgJson value="false" />
+    <isAutomaticCheckingOnLaunch value="false" />
+    <isAutomaticFoundErrors value="true" />
+    <isAutomaticFoundErrors value="true" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -189,7 +208,19 @@
     <MESSAGE value="main" />
     <MESSAGE value="cmake" />
     <MESSAGE value="list and some main fixtures&#10;Cmake recompabiling" />
-    <option name="LAST_COMMIT_MESSAGE" value="list and some main fixtures&#10;Cmake recompabiling" />
+    <MESSAGE value="edge list and weighing matrix" />
+    <option name="LAST_COMMIT_MESSAGE" value="edge list and weighing matrix" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/inc/kruskal.h</url>
+          <line>1</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

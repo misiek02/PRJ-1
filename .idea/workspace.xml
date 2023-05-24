@@ -21,17 +21,12 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3143d1ee-2bb6-496d-a5b8-e2e67d34239f" name="Changes" comment="edge list and weighing matrix">
-      <change afterPath="$PROJECT_DIR$/inc/Dijkstry.h" afterDir="false" />
+    <list default="true" id="3143d1ee-2bb6-496d-a5b8-e2e67d34239f" name="Changes" comment="Dijkstry">
+      <change afterPath="$PROJECT_DIR$/inc/Bellman-Ford.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -143,7 +138,7 @@
       <workItem from="1681901871446" duration="398000" />
       <workItem from="1682101226111" duration="45000" />
       <workItem from="1683659029754" duration="1004000" />
-      <workItem from="1684886176573" duration="733000" />
+      <workItem from="1684886176573" duration="1639000" />
     </task>
     <task id="LOCAL-00001" summary="ez">
       <created>1678310810216</created>
@@ -180,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681794762780</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Dijkstry">
+      <created>1684887110106</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1684887110106</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,7 +211,8 @@
     <MESSAGE value="cmake" />
     <MESSAGE value="list and some main fixtures&#10;Cmake recompabiling" />
     <MESSAGE value="edge list and weighing matrix" />
-    <option name="LAST_COMMIT_MESSAGE" value="edge list and weighing matrix" />
+    <MESSAGE value="Dijkstry" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dijkstry" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

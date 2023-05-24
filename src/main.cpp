@@ -12,6 +12,7 @@
 #include "stackList.h"
 #include "stackTab.h"
 #include "Dijkstry.h"
+#include "Bellman-Ford.h"
 //#include <SFML/Graphics.hpp>
 #include "EdgeList.h"
 #include "adjacencyListWeighted.h"
@@ -65,7 +66,9 @@ int main() {
 //
 //  return 0;
 
-    Graphh<int> graph;
+
+
+    Graphhh<int> graph;
     graph.AddVertex(1);
     graph.AddVertex(2);
     graph.AddVertex(3);
@@ -81,8 +84,7 @@ int main() {
     graph.AddEdge(3, 5, 2);
     graph.AddEdge(4, 5, 4);
 
-    graph.Dijkstra(1);
+    graph.BellmanFord(1);
     graph.PrintShortestDistances();
-
     return 0;
 }

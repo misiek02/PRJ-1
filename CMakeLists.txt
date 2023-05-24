@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD 17)
 
 
 add_executable(PRJ_1
-        src/main.cpp inc/list.h inc/stackTab.h inc/queueTab.h inc/Array.h inc/stackList.h inc/catch.hpp inc/singly_linked_list.h inc/weight.h inc/EdgeList.h inc/Dijkstry.h)
+        src/main.cpp inc/list.h inc/stackTab.h inc/queueTab.h inc/Array.h inc/stackList.h inc/catch.hpp inc/singly_linked_list.h inc/weight.h inc/EdgeList.h inc/Dijkstry.h inc/Bellman-Ford.h)
 target_link_libraries(PRJ_1 sfml-audio sfml-graphics sfml-window sfml-system)
 target_include_directories(PRJ_1 PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/inc)
 
